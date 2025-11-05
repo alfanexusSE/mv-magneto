@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta Comercial – MV Magneto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-brand-black { background-color: #18181b; }
+        .text-brand-black { color: #18181b; }
+        .border-brand-black { border-color: #18181b; }
+        .bg-brand-gray { background-color: #3f3f46; }
+        .text-brand-gray { color: #3f3f46; }
+        .border-brand-gray { border-color: #3f3f46; }
+        .shadow-brand { box-shadow: 0 10px 15px -3px rgba(31, 41, 55, 0.10), 0 4px 6px -2px rgba(31, 41, 55, 0.05); }
+        .animated-bg {
+            background: radial-gradient(circle at 25% 60%, #8b5cf6 0%, #fafafa 100%);
+            background-size: 200% 200%;
+            animation: bgmove 8s ease-in-out infinite alternate;
+        }
+        @keyframes bgmove {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        .hover-lift-glow {
+            transition: all 0.22s cubic-bezier(0.4, 0.2, 0.3, 1.06);
+        }
+        .hover-lift-glow:hover {
+            transform: translateY(-12px) scale(1.03);
+            box-shadow: 0 16px 32px -8px #6366f1cc;
+            border-color: #6366f1;
+            z-index: 2;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(139,92,246,0.5);}
+            70% { box-shadow: 0 0 0 14px rgba(139,92,246,0);}
+            100% { box-shadow: 0 0 0 0 rgba(139,92,246,0);}
+        }
+        .animate-pulse-bright:hover {
+            animation: pulse 1s;
+            transform: scale(1.03);
+            background: linear-gradient(90deg, #18181b 80%, #8b5cf6 100%);
+            box-shadow: 0 10px 30px -8px #6366f1cc;
+            transition: transform 0.2s, background 0.35s;
+        }
+        .icon-bounce {
+            animation: bounce-in 0.9s;
+        }
+        @keyframes bounce-in {
+            0% { transform: scale(0.7); opacity: 0.3; }
+            40% { transform: scale(1.2); opacity: 1; }
+            70% { transform: scale(0.9);}
+            100% { transform: scale(1);}
+        }
+    </style>
+</head>
+<body class="bg-white text-black">
+
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- Header -->
+        <header class="grid grid-cols-1 sm:grid-cols-3 items-center mb-12 sm:mb-16 gap-4" data-aos="fade-down">
+            <div class="flex items-center gap-4 justify-center sm:justify-start">
+                <img src="logo-magneto.png" alt="Logo MV Magneto" class="h-16 icon-bounce">
+                <div>
+                    <h1 class="text-2xl font-bold text-brand-black">Proposta Comercial</h1>
+                    <p class="text-brand-gray">MV Magneto – Soluções Digitais</p>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <img src="perfil-magneto.png" alt="MV Magneto Institucional" class="w-36 h-36 rounded-xl border border-gray-200 icon-bounce">
+            </div>
+            <div class="text-center sm:text-right">
+                <p class="text-sm text-gray-500">Data: 05 de Novembro de 2025</p>
+                <p class="text-sm text-brand-black font-semibold">#PropostaMagneto2025</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="text-center mb-16" data-aos="zoom-in">
+                <h2 class="text-3xl font-extrabold text-brand-black mb-4">Nosso Objetivo</h2>
+                <p class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed">
+                    Impulsionar a presença digital da MV Magneto através da construção de uma Landing Page moderna e eficiente.
+                </p>
+            </section>
+
+            <section class="mb-16">
+                <h2 class="text-3xl font-extrabold text-brand-black text-center mb-10" data-aos="fade-up">Escopo do Projeto</h2>
+                <div class="grid grid-cols-1 gap-8 justify-center">
+                    <!-- Único Card -->
+                    <div class="bg-white p-8 rounded-2xl shadow-brand flex flex-col border-2 border-brand-black hover-lift-glow mx-auto" data-aos="fade-right" data-aos-delay="100" style="max-width: 450px;">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="bg-brand-black text-white p-3 rounded-full icon-bounce">
+                                <i data-lucide="layout" class="w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-brand-black">Criação de Landing Page Institucional</h3>
+                        </div>
+                        <ul class="space-y-3 text-gray-700 list-inside mb-6 flex-grow">
+                            <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-5 h-5 text-brand-black flex-shrink-0 mt-1"></i><span>Landing Page moderna e responsiva</span></li>
+                            <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-5 h-5 text-brand-black flex-shrink-0 mt-1"></i><span>Geração de Leads para o WhatsApp</span></li>
+                            <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-5 h-5 text-brand-black flex-shrink-0 mt-1"></i><span>Deploy imediato após produção</span></li>
+                        </ul>
+                        <div class="bg-gray-100 p-4 rounded-lg text-center mt-auto">
+                            <p class="text-gray-500 text-sm font-semibold mb-2">Custo de Desenvolvimento<br>(parcelável em até 5x no cartão)</p>
+                            <p class="text-2xl font-bold text-brand-black mb-4">R$ 1.500,00</p>
+                            <p class="text-gray-500 text-sm font-semibold mb-2">Página adicional (opcional)</p>
+                            <p class="text-xl font-bold text-brand-black mb-2">R$ 300,00 cada</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Benefício/Brinde -->
+            <section class="mb-16 gradient-bg animated-bg p-8 sm:p-12 rounded-2xl" data-aos="fade-up">
+                <h2 class="text-3xl font-extrabold text-brand-black text-center mb-10">Brinde Exclusivo</h2>
+                <div class="grid grid-cols-1 md:grid-cols-1 gap-8 justify-center">
+                    <div class="bg-white/70 backdrop-blur-sm p-6 rounded-xl border border-gray-200 hover-lift-glow mx-auto" style="max-width:400px;" data-aos="fade-right" data-aos-delay="150">
+                        <div class="flex items-center gap-4 mb-3">
+                            <i data-lucide="award" class="w-8 h-8 text-brand-black icon-bounce"></i>
+                            <h3 class="text-xl font-bold text-brand-black">1h Mensal de Consultoria</h3>
+                        </div>
+                        <p class="text-gray-700 mt-2 mb-0">Consultoria em branding e marketing estratégico para potencializar seus resultados digitais.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mt-20 text-center" data-aos="zoom-in">
+                <h2 class="text-2xl font-bold text-brand-black">Pronto para começar?</h2>
+                <p class="max-w-xl mx-auto text-gray-700 mt-2 mb-8">
+                    Estamos à disposição para tirar dúvidas e iniciar sua nova presença digital!
+                </p>
+                <a href="https://wa.me/5582981452122?text=Olá!%0ARecebi%20a%20proposta%20comercial%20da%20MV%20Magneto%20e%20quero%20avançar%20para%20a%20próxima%20etapa!"
+                   target="_blank"
+                   class="bg-brand-black hover:bg-brand-gray text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 shadow-brand animate-pulse-bright">
+                    Dar o próximo passo
+                </a>
+            </section>
+        </main>
+
+        <footer class="text-center mt-16" data-aos="fade-up">
+            <p class="text-gray-500 text-sm">MV Magneto Soluções Digitais</p>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        lucide.createIcons();
+        AOS.init();
+    </script>
+</body>
+</html>
+
